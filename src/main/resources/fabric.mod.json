@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hookshot_posefix",
+  "version": "${version}",
+  "name": "Hookshot Posefix",
+  "description": "Hold My ItemsがHookshotの持ち方の描画を勝手に変更するのでこのModで上書きしてやろうと思います。",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.dareq.hookshotposefix.hookshot_posefix.client.Hookshot_posefixDataGenerator"
+    ],
+    "client": [
+      "net.dareq.hookshotposefix.hookshot_posefix.client.Hookshot_posefixClient"
+    ],
+    "main": [
+      "net.dareq.hookshotposefix.hookshot_posefix.HookshotPoseFixMod"
+    ]
+  },
+  "mixins": [
+    "mixin.hookshotposefix.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

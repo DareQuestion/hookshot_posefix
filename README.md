@@ -1,2 +1,0 @@
-# hookshot_posefix
-Hookshotの持ち方の描画リセット
